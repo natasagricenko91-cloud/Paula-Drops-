@@ -1,0 +1,66 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile and game progress linked to Paula ID",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Firebase Auth UID"
+        },
+        "email": {
+          "type": "string",
+          "description": "User Google account email"
+        },
+        "displayName": {
+          "type": "string",
+          "maxLength": 60,
+          "description": "Brawler name or Google display name"
+        },
+        "photoURL": {
+          "type": "string",
+          "maxLength": 500,
+          "description": "Avatar image URL"
+        },
+        "paulaId": {
+          "type": "string",
+          "maxLength": 32,
+          "description": "Unique Paula ID gaming tag"
+        },
+        "trophies": {
+          "type": "number",
+          "description": "Current player trophy count"
+        },
+        "gold": {
+          "type": "number",
+          "description": "Player gold balance"
+        },
+        "gems": {
+          "type": "number",
+          "description": "Player gems balance"
+        },
+        "selectedBrawler": {
+          "type": "string",
+          "maxLength": 32,
+          "description": "Currently selected brawler ID"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "ISO timestamp of creation"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "ISO timestamp of last update"
+        }
+      },
+      "required": ["id", "email", "displayName", "paulaId", "trophies", "gold", "gems"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "Paula ID authenticated user profile and game progress"
+    }
+  }
+}

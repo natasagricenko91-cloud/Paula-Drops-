@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Lilita One', 'Rubik', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-brawl {
+  font-family: 'Lilita One', cursive, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.font-body {
+  font-family: 'Rubik', sans-serif;
+}
+
+/* Supercell Signature Heavy Text Stroke & 3D Shadow */
+.brawl-stroke {
+  -webkit-text-stroke: 3px #081126;
+  text-shadow: 0 4px 0 #050b18, 0 6px 4px rgba(0,0,0,0.6);
+}
+
+.brawl-stroke-sm {
+  -webkit-text-stroke: 1.5px #081126;
+  text-shadow: 0 2px 0 #050b18, 0 4px 3px rgba(0,0,0,0.5);
+}
+
+.brawl-stroke-white {
+  -webkit-text-stroke: 1.5px #ffffff;
+  text-shadow: 0 2px 0 rgba(0,0,0,0.4);
+}
+
+/* 3D Supercell Skewed Cartoon Button */
+.brawl-btn-yellow {
+  background: linear-gradient(180deg, #ffe033 0%, #ff9e00 100%);
+  border: 3px solid #1a2035;
+  box-shadow: 0 6px 0 #b45309, 0 10px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+.brawl-btn-yellow:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #b45309, 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.brawl-btn-green {
+  background: linear-gradient(180deg, #4ade80 0%, #16a34a 100%);
+  border: 3px solid #1a2035;
+  box-shadow: 0 6px 0 #14532d, 0 10px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+.brawl-btn-green:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #14532d, 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.brawl-btn-blue {
+  background: linear-gradient(180deg, #38bdf8 0%, #0284c7 100%);
+  border: 3px solid #1a2035;
+  box-shadow: 0 6px 0 #0369a1, 0 10px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+.brawl-btn-blue:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #0369a1, 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.brawl-btn-purple {
+  background: linear-gradient(180deg, #c084fc 0%, #7e22ce 100%);
+  border: 3px solid #1a2035;
+  box-shadow: 0 6px 0 #4c1d95, 0 10px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+.brawl-btn-purple:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #4c1d95, 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.brawl-btn-red {
+  background: linear-gradient(180deg, #f87171 0%, #dc2626 100%);
+  border: 3px solid #1a2035;
+  box-shadow: 0 6px 0 #7f1d1d, 0 10px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+.brawl-btn-red:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #7f1d1d, 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Hazard striping for Maintenance screen */
+.hazard-stripes {
+  background: repeating-linear-gradient(
+    -45deg,
+    #facc15,
+    #facc15 20px,
+    #000000 20px,
+    #000000 40px
+  );
+}
+
+/* Hide scrollbars for slick game menus */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}

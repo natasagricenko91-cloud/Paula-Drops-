@@ -1,0 +1,6 @@
+{
+  "name": "Paula Drops - 3v3 Hero Shooter",
+  "description": "Paula Drops 2.0 is an authentic 3v3 real-time multiplayer arena hero shooter featuring Paula ID Google Sign-in, Google Drive cloud save backups, Google Sheets esports match logging, Google Calendar tournament schedules, Gemini 2.5 Flash esports casting, and comprehensive developer tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
